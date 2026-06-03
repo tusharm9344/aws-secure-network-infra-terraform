@@ -1,25 +1,6 @@
 AWS VPC Infrastructure with Terraform
 -------------------------------------
-INTERNET
-                        │
-                        ▼
-               [Internet Gateway]
-                        │
-          ┌─────────────────────────┐
-          │      PUBLIC SUBNET       │
-          │      (10.0.1.0/24)      │
-          │                         │
-          │  [Bastion]   [NAT GW]   │
-          └─────────────────────────┘
-                │               │
-              SSH            outbound
-                │               │
-          ┌─────────────────────────┐
-          │      PRIVATE SUBNET      │
-          │      (10.0.2.0/24)      │
-          │                         │
-          │       [Private EC2]      │
-          └─────────────────────────┘
+
 HOW TO DEPLOY ->
 # 1. Clone the repo
 git clone <your-repo-url>
